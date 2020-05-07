@@ -13,6 +13,12 @@
 		AEC7501E2463350700B9E113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC7501D2463350700B9E113 /* Assets.xcassets */; };
 		AEC750212463350700B9E113 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC750202463350700B9E113 /* Preview Assets.xcassets */; };
 		AEC750242463350700B9E113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC750222463350700B9E113 /* LaunchScreen.storyboard */; };
+		AEC7502D246336B500B9E113 /* MasjidList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC7502C246336B500B9E113 /* MasjidList.swift */; };
+		AEC7502F246336C500B9E113 /* MasjidDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC7502E246336C500B9E113 /* MasjidDetails.swift */; };
+		AEC75031246336E500B9E113 /* MasjidStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC75030246336E500B9E113 /* MasjidStruct.swift */; };
+		AEC75033246350BA00B9E113 /* ReadersStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC75032246350BA00B9E113 /* ReadersStruct.swift */; };
+		AEC750382463575600B9E113 /* Playsound.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC750372463575600B9E113 /* Playsound.swift */; };
+		AED2B718246476180019F8FD /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AED2B717246476180019F8FD /* 1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		AEC750202463350700B9E113 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEC750232463350700B9E113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC750252463350700B9E113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC7502C246336B500B9E113 /* MasjidList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidList.swift; sourceTree = "<group>"; };
+		AEC7502E246336C500B9E113 /* MasjidDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidDetails.swift; sourceTree = "<group>"; };
+		AEC75030246336E500B9E113 /* MasjidStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidStruct.swift; sourceTree = "<group>"; };
+		AEC75032246350BA00B9E113 /* ReadersStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadersStruct.swift; sourceTree = "<group>"; };
+		AEC750372463575600B9E113 /* Playsound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playsound.swift; sourceTree = "<group>"; };
+		AED2B717246476180019F8FD /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 				AEC750172463350600B9E113 /* AppDelegate.swift */,
 				AEC750192463350600B9E113 /* SceneDelegate.swift */,
 				AEC7501B2463350600B9E113 /* ContentView.swift */,
+				AEC7502B2463363C00B9E113 /* HomeworkDay3Masjd */,
 				AEC7501D2463350700B9E113 /* Assets.xcassets */,
 				AEC750222463350700B9E113 /* LaunchScreen.storyboard */,
 				AEC750252463350700B9E113 /* Info.plist */,
@@ -73,6 +86,27 @@
 				AEC750202463350700B9E113 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEC7502B2463363C00B9E113 /* HomeworkDay3Masjd */ = {
+			isa = PBXGroup;
+			children = (
+				AEC7502C246336B500B9E113 /* MasjidList.swift */,
+				AEC7502E246336C500B9E113 /* MasjidDetails.swift */,
+				AEC75032246350BA00B9E113 /* ReadersStruct.swift */,
+				AEC750372463575600B9E113 /* Playsound.swift */,
+				AEC75030246336E500B9E113 /* MasjidStruct.swift */,
+				AEC750342463554400B9E113 /* Sounds */,
+			);
+			path = HomeworkDay3Masjd;
+			sourceTree = "<group>";
+		};
+		AEC750342463554400B9E113 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AED2B717246476180019F8FD /* 1.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +169,7 @@
 			files = (
 				AEC750242463350700B9E113 /* LaunchScreen.storyboard in Resources */,
 				AEC750212463350700B9E113 /* Preview Assets.xcassets in Resources */,
+				AED2B718246476180019F8FD /* 1.mp3 in Resources */,
 				AEC7501E2463350700B9E113 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +182,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC750182463350600B9E113 /* AppDelegate.swift in Sources */,
+				AEC750382463575600B9E113 /* Playsound.swift in Sources */,
 				AEC7501A2463350600B9E113 /* SceneDelegate.swift in Sources */,
 				AEC7501C2463350600B9E113 /* ContentView.swift in Sources */,
+				AEC7502D246336B500B9E113 /* MasjidList.swift in Sources */,
+				AEC75031246336E500B9E113 /* MasjidStruct.swift in Sources */,
+				AEC75033246350BA00B9E113 /* ReadersStruct.swift in Sources */,
+				AEC7502F246336C500B9E113 /* MasjidDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
