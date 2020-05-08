@@ -15,9 +15,12 @@ struct MasjidList: View {
         NavigationView{
             List( masjids) { masjid in
                
-        NavigationLink(destination: MasjidDetails(masjid: masjid)){
+        NavigationLink(destination: MasjidDetails(masjid: masjid))
+        {
                     layoutRow(masjid: masjid)
-                }}.navigationBarTitle("مساجد الكويت")
+                }
+                
+            }.navigationBarTitle("مساجد الكويت")
             
                     
                 }
@@ -50,7 +53,7 @@ struct layoutRow :View{
             // shape of the icon
             VStack(alignment: .leading)
             {Text(masjid.masjidname).font(.headline)
-                //Text(movie.characters.joined(separator:","))
+                
             }
             
             }.padding(.vertical)

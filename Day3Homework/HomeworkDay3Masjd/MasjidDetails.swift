@@ -22,10 +22,10 @@ struct MasjidDetails: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 500, height: 400)
-                    .offset(y : -250)
+                    .offset(y : -150)
                 
                 ScrollView(.horizontal){
-                    HStack{
+                    HStack( spacing: -50){
                             ForEach(reader, id: \.self)
                             { i in
                                 Button(action: {
@@ -35,39 +35,44 @@ struct MasjidDetails: View {
                                         .resizable()
                                         .scaledToFit()
                                         .clipShape(Circle())
-                                        .frame(width: 200,height: 150)
+                                        .frame(width: 250,height: 140)
                                         .overlay(Circle().stroke(Color.black, lineWidth: 6))
                                 }
                                 
                             }
                         
                     }.padding()
-                }.offset(y:-450) .padding(.leading)
+                    
+                }.offset(y: -270)
                 
-                //        ScrollView{
-                VStack{
-                    ForEach(0..<time.count ){ i in
-                        VStack{
-                            HStack(spacing: 20){
+            
+          
+            
+                ScrollView(.vertical){
+               
+                    
+                        VStack(spacing: 40){
+                            ForEach(0..<time.count ){ i in
+                            HStack(spacing: 250){
                                 Text(self.prayer[i])
                                 Text(self.time[i])
                                 
-                            }.foregroundColor(.white)
+                            }
                         }
                         
-                    }
-                    
-                    
-                }.offset(y:-200)
-                
-                //  }
-            }
+                    }.background(Color(.white).opacity(0.5))
+       
+                }.offset(y:-100)
+            
+                .foregroundColor(.white)
+            
+            }//end of Vstack
             
             
             
             
             
-        }.edgesIgnoringSafeArea(.all)
+        }.edgesIgnoringSafeArea(.all) // end of Zstack
     }}
 
 
@@ -75,6 +80,7 @@ struct MasjidDetails_Previews: PreviewProvider {
     static var previews: some View {
         MasjidDetails(masjid: masjids[0])
             .environment(\.colorScheme, .dark)
+          .environment(\.layoutDirection, .rightToLeft)
     }
 }
 
